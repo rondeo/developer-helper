@@ -4,6 +4,9 @@ export class App {
     configureRouter(config, router) {
         this.router = router;
         config.title = 'Developer helper';
+        this.github = 'https://github.com/anthonybocci';
+        this.stackoverflow = 'https://stackoverflow.com/users/4932315/anthonyb?tab=profile';
+
         config.map([
           { route: ['', '/home'],        name: 'home',           moduleId: PLATFORM.moduleName('home'), nav: true, title: 'Home' },
           { route: '/string-length',     name: 'string-length',  moduleId: PLATFORM.moduleName('string-length'), nav: true, title: 'String length' },
