@@ -1,12 +1,12 @@
 <template>
     <h1>Base 64 encode/decode</h1>
 
-    <p>
-        Type your text below and choose either encode or decode.
-    </p>
-    <textarea value.bind="string"></textarea>
-    <button click.trigger="encode()">Encode</button>
-    <button click.trigger="decode()">Decode</button>
+    <p>Type your text below and choose either encode or decode.</p>
+    <form>
+        <textarea value.bind="string"></textarea><br />
+        <button click.trigger="encode()">Encode</button>
+        <button click.trigger="decode()">Decode</button>
+    </form>
     <p>
         ${result}
     </p>
